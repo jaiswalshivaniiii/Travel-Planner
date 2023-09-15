@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Planner</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Travel Planner</h1>
+    <div class="container">
+        <div class="destination-form">
+            <h2>Add Destination</h2>
+            <form id="destination-form">
+                <label for="destination-name">Name:</label>
+                <input type="text" id="destination-name" required>
+                <label for="destination-date">Date:</label>
+                <input type="date" id="destination-date" required>
+                <button type="submit">Add Destination</button>
+            </form>
+        </div>
+        <div class="destination-list">
+            <h2>Destination List</h2>
+            <ul id="destination-list">
+                <!-- Destination items will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
