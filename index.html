@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Travel Planner</title>
+    <title>Travel Planner Website</title>
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Travel Planner</h1>
-    <div class="container">
-        <div class="destination-form">
-            <h2>Add Destination</h2>
-            <form id="destination-form">
-                <label for="destination-name">Name:</label>
-                <input type="text" id="destination-name" required>
-                <label for="destination-date">Date:</label>
-                <input type="date" id="destination-date" required>
-                <button type="submit">Add Destination</button>
-            </form>
+    <header>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
         </div>
-        <div class="destination-list">
-            <h2>Destination List</h2>
-            <ul id="destination-list">
-                <!-- Destination items will be dynamically added here -->
-            </ul>
-        </div>
-    </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search-here....">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
 
     <script src="script.js"></script>
 </body>

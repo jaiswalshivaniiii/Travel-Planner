@@ -1,54 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --orange:#ffa500;
+}
+
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
     background-color: #f4f4f4;
 }
-
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-
-.destination-form, .destination-list {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-label, input, button {
-    display: block;
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #333;
+*::selection{
+    background: var(--orange);
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
 }
-
-ul {
-    list-style-type: none;
-    padding: 0;
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
 }
-
-li {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header{
+    position: relative;
+    top: 0; left: 0; right: 0;
+    background: #333;
 }
